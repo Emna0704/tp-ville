@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>ville</title>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Les grandes villes de France</h1>
+        <div class="form-container">
+          <h2>Choix de la région et du département</h2>
+          <form id="region-department-form">
+          
+            <label for="regions">Liste des régions</label>
+            <select id="regions" name="regions">
+              <option value="all">Toutes les régions</option>
+            </select>
+    
+            <label for="departments">Liste des départments</label>
+            <select id="departments" name="departments">
+              <option value="all">Touts les départements</option>
+            </select>
+    
+            <button type="button" id="show-communes">Afficher les communes</button>
+            <button type="button" id="geo">Géolocaliser</button>
+            <div id="result"></div>
+          </form>
+
+        </div>
+        <div id="communes-list" class="form-container">
+            <h2> Liste des communes (de la + peuplée à la - peuplée)</h2>
+            <ul id="communes">
+            </ul>
+
+          </div>
+    
+</body>
+</html>
